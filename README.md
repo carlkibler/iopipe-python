@@ -13,7 +13,9 @@ module dependencies within their project paths, thus we use `-t $PWD`.
 From your project directory:
 
 ```
-$ pip install https://github.com/iopipe/iopipe-python -t .
+# This will install iopipe and the requests library
+$ pip install git+git://github.com/iopipe/iopipe-python.git#egg=iopipe -t .
+# If you need to install requests library manually:
 $ pip install requests -t iopipe/requests
 ```
 
